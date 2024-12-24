@@ -6,8 +6,10 @@ CONJUNTO DE:
  MÉTODO
   -GET
     - GET - http://meusite.com.br/usarios?tipofiltragen=nome$nomeUsuario=vitor
+    - BUSCAR DADOS
   -POST
     - http://meusite.com.br/usuarios
+    - ADCIONAR  DADOS
     -nome=Jesse
     -sobrenome=Silva
     -idade=33
@@ -15,9 +17,11 @@ CONJUNTO DE:
 
   -PUT
     -Ele ja adciona um id.
+    - EDITAR DADOS
   -PATCH
   -DELETE
     -Usado para deletar algum dados
+    - DELETAR DADOS
 
 ---------------------------------------------------------------------    
  CABEÇALHOS
@@ -43,3 +47,21 @@ API REST
   METODO USADO 
   -POST
 
+  OBS: SEMPRE NO FORMATO JSON, SEMPRE VAI RETORNAR ALGUMA COISA
+
+
+
+-----------------------------------------------------------------------------
+
+API PARA LOJA VIRTUAL 
+  JORNADA DO CLIENTE ATÉ FAZER UMA COMPRA
+
+    CARREGAR PRODUTOS ----------------------------------------------------------> https://pijamasfofos.com.br/api/produtos - GET
+    CARREGAR OS DADOS DE UM PRODUTO---------------------------------------------> https://pijamasfofos.com.br/api/produtos/id?id_produto=123 - GET
+    ADCIONAR AO CARRINHO--------------------------------------------------------> https://pijamasfofos.com.br/api/carrinho - POST
+    VER CARRINHO----------------------------------------------------------------> https://pijamasfofos.com.br/api/carrinho - GET
+    FECHAR O CARRINHO-----------------------------------------------------------> https://pijamasfofos.com.br/api/carrinho - PUT
+    PAGAMENTO-------------------------------------------------------------------> https://pijamasfofos.com.br/api/pagamento - POST
+    E-MAIL ---------------------------------------------------------------------> https://pijamasfofos.com.br/api/servico_email - POST
+    GERAÇÃO DE NOTA FISCAL------------------------------------------------------> https://pijamasfofos.com.br/api/servico_email/nota_fiscal - POST
+    ENVIO POR E-MAIL DA NOTA FISCALENVIO DE CÓDIG DE RASTREIO DO PRODUTO--------> https://pijamasfofos.com.br/api/servico_email/codigo_rastreio - POST
