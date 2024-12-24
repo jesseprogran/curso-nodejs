@@ -1,0 +1,45 @@
+REQUISIÇÃO
+
+CONJUNTO DE:
+ PROTOCOLO
+  - HTTP E HTTPS
+ MÉTODO
+  -GET
+    - GET - http://meusite.com.br/usarios?tipofiltragen=nome$nomeUsuario=vitor
+  -POST
+    - http://meusite.com.br/usuarios
+    -nome=Jesse
+    -sobrenome=Silva
+    -idade=33
+    escolaridade=fundamental_completo
+
+  -PUT
+    -Ele ja adciona um id.
+  -PATCH
+  -DELETE
+    -Usado para deletar algum dados
+
+---------------------------------------------------------------------    
+ CABEÇALHOS
+  -HEADER
+ CORPO
+ STATUS CODE
+  RESPOSTA 
+  -200 - SUCCESS
+  -201 - CREATED
+  -400 - BAD REQUEST
+  -404 - NOT FOUND
+  -500 - FATAL ERROR
+
+---------------------------------------------------------------------
+PORTAS
+
+---------------------------------------------------------------------
+
+API REST
+  ADCIONAR UM USUÁRIO
+  - https://delivery.com.br/api/usuarios
+
+  METODO USADO 
+  -POST
+
